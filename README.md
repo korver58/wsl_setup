@@ -18,9 +18,8 @@ sudo usermod -aG docker ${USER}
 
 docker run hello-world
 
-# ~/.bashrc
-# export HOSTIP=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
-# export DISPLAY=${HOSTIP}:0
+echo "export HOSTIP=\$(cat /etc/resolv.conf | grep nameserver | awk '{print \$2}')" >> ~/.bashrc
+echo 'export DISPLAY=${HOSTIP}:0' >> ~/.bashrc
 ```
 
 ## Tips
