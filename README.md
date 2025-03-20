@@ -3,9 +3,13 @@
 ## install wsl ubuntu in windows
 ```powershell
 wsl --update
-wsl --set-default-version 2
+# list available
 wsl -l -o
 wsl --install -d Ubuntu-24.04
+# check
+wsl -l -v
+#   NAME            STATE           VERSION
+# * Ubuntu-24.04    Running         2
 ```
 
 ## setup in ubuntu
